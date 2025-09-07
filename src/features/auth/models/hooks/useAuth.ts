@@ -1,26 +1,21 @@
-import { useCallback } from "react";
-import type { ISignInForm } from '../types';
+import { useCallback } from 'react';
 import { useLoading, type IApiError } from '@/shared';
+import type { AxiosResponse } from 'axios';
 
-
-type AsyncFuncWithData<FormData, Response> = (data: FormData) => Promise<{ data: Response }>;
+type AsyncFunc<FormData, Response> = (data: FormData) => Promise<AxiosResponse<Response>>;
 
 export const useAuth = () => {
-
     const { isLoading, startLoading, stopLoading } = useLoading();
 
-
     const onSubmit = useCallback(
-        async <FormData, Response>(
-            formData: FormData,
-            fc: AsyncFuncWithData<FormData, Response>
-        ) => {
+        async <FormData, Response>(formData: FormData, fc: AsyncFunc<FormData, Response>) => {
             startLoading();
             try {
                 const result = await fc(formData);
                 return result.data;
             } catch (error: unknown) {
                 const err = error as IApiError;
+
                 switch (err?.status) {
                     case 422:
                         throw { type: 'server', message: 'Неправильное имя пользователя или пароль.' };
@@ -36,6 +31,5 @@ export const useAuth = () => {
         []
     );
 
-
     return { onSubmit, isLoading };
-}
+};

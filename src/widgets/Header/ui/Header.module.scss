@@ -1,59 +1,57 @@
 .header {
-    padding: 10px 0;
-    max-height: 60px;
-    .header_content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  padding: 10px 0;
+  max-height: 60px;
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .logo {
-            font-size: 24px;
-            color: var(--green-color);
-            font-weight: 700;
-        }
-
-        .links {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-
-            li {
-                a {
-                    display: flex;
-                    gap: 8px;
-                    font-size: 16px;
-                    font-weight: 500;
-                    color: black;
-                }
-            }
-        }
-
-        .user-btns {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-
-            .sign-up {
-                padding: 12px 10px;
-                font-size: 18px;
-                font-weight: 400;
-                background-color: var(--green-color);
-                color: white;
-                border-radius: 10px;
-                max-width: 120px;
-            }
-
-            .sign-in {
-                padding: 12px 10px;
-                font-size: 18px;
-                font-weight: 400;
-                color: var(--green-color);
-                border-radius: 10px;
-                border: 1px solid var(--green-color);
-                max-width: 120px;
-            }
-
-        }
+    .logo {
+      font-size: 24px;
+      color: var(--green-color);
+      font-weight: 700;
     }
 
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      li {
+        a {
+          display: flex;
+          gap: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          color: black;
+        }
+      }
+    }
+
+    .user-btns {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      .sign-up {
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: var(--green-color);
+        color: white;
+        border-radius: 10px;
+        max-width: 120px;
+      }
+
+      .sign-in {
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--green-color);
+        border-radius: 10px;
+        border: 1px solid var(--green-color);
+        max-width: 120px;
+      }
+    }
+  }
 }
