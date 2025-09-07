@@ -1,10 +1,7 @@
-import { CreateArticleWidget } from '@/widgets/CreateArticleWidget'
-import React from 'react'
+import { CreateArticleWidget } from '@/widgets/CreateArticleWidget';
 
 const CreateArticlePage = () => {
-  return (
-    <CreateArticleWidget />
-  )
-}
+  return <CreateArticleWidget />;
+};
 
-export default CreateArticlePage
+export default CreateArticlePage;

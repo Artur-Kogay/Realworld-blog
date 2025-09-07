@@ -61,7 +61,7 @@ const SettingsProfileForm = () => {
       )}
       {errors.serverError?.message && (
         <h2 className={styles['error-message']}>
-          {errors.serverError?.message}
+          {String(errors.serverError.message)}
         </h2>
       )}
       <form className={styles.form} onSubmit={handleSubmit(handleDataSubmit)}>

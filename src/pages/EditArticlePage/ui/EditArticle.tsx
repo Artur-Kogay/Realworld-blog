@@ -1,12 +1,11 @@
-import styles from './EditArticle.module.scss'
-import { EditArticleWidget } from '@/widgets'
+import { EditArticleWidget } from '@/widgets';
 
 const EditArticle = () => {
   return (
     <>
-        <EditArticleWidget />
+      <EditArticleWidget />
     </>
-  )
-}
+  );
+};
 
-export default EditArticle
+export default EditArticle;
