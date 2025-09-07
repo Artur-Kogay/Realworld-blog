@@ -1,0 +1,1 @@
+export { type IArticleUser } from './types/IArticleUser'

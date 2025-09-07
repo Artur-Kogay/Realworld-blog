@@ -1,0 +1,18 @@
+.like-btn {
+    padding: 12px 16px;
+    border: 1px solid var(--green-color);
+    border-radius: 10px;
+    color: var(--green-color);
+    font-size: 12.8px;
+    font-weight: 400;
+    display: flex;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.like-btn.active {
+    background-color: var(--green-color);
+    color: white;
+    border: 1px solid rgb(48, 130, 67);
+    transition: 0.3s;
+}

@@ -1,0 +1,33 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    .username {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 32px;
+    }
+    .user_btn {
+        padding: 10.5px 12px;
+        border-radius: 10px;
+        border: 1px solid var(--green-color);
+        color: var(--green-color);
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        span:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            border-radius: 50%;
+            border: 2px solid white;
+            max-width: 32px;
+            max-height: 32px;
+        }
+    }
+}

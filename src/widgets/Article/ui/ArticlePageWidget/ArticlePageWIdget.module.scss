@@ -1,0 +1,42 @@
+.article {
+    .article_hero {
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 0;
+
+        .article_title {
+            font-weight: 700;
+            color: white;
+            font-size: 46px;
+            line-height: 40px;
+        }
+
+        .hero_content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            button {
+                margin-top: 10px;
+            }
+        }
+
+        .hero_content>div {
+            align-self: flex-start;
+        }
+
+    }
+
+    .article_content {
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .article_meta {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+    }
+}

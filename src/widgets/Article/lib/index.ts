@@ -1,0 +1,1 @@
+export type { ArticleWithProps } from './types/ArticleWithProps'

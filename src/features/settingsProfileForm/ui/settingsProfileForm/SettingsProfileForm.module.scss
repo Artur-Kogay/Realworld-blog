@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.error-message {
+    font-size: 16px;
+    color: rgb(169, 41, 41);
+    font-weight: 600;
+}
+
+.success {
+    font-size: 16px;
+    color: rgb(43, 167, 53);
+    font-weight: 600;
+}

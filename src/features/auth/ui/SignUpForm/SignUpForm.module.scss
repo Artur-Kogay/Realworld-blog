@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    label {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    button {
+        align-self: flex-end;
+    }
+}
+
+.error-message {
+    font-size: 16px;
+    color: rgb(169, 41, 41);
+    font-weight: 600;
+}

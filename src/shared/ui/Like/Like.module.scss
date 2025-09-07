@@ -1,0 +1,9 @@
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--green-color);
+}
+
+.icon.active {
+    fill: white;
+}

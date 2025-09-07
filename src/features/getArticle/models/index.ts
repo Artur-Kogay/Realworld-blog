@@ -1,0 +1,1 @@
+export { useGetArticle } from './hooks/useGetArticle';
