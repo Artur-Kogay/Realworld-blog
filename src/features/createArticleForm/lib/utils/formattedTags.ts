@@ -1,5 +1,7 @@
-export const formattedTags = (str: string) => {
-    if(!str.trim()) {
+export const formattedTags = (str: string | string[]) => {
+    if (Array.isArray(str)) return
+
+    if (!str.trim()) {
         return;
     }
 
