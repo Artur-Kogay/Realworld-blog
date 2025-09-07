@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import styles from './ArticlePageWidget.module.scss';
+import styles from './ArticlePageWIdget.module.scss';
 import { useGetArticle, useToggleFavorite } from '@/features';
 import { Button, Container, Spinner, TagList } from '@/shared';
 import { ArticleUser } from '@/entitites';
